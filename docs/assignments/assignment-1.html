@@ -355,6 +355,14 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#b" id="toc-b" class="nav-link" data-scroll-target="#b">(b)</a></li>
   </ul></li>
+  <li><a href="#load-the-dataset-and-define-variables" id="toc-load-the-dataset-and-define-variables" class="nav-link" data-scroll-target="#load-the-dataset-and-define-variables">Load the dataset and define variables</a></li>
+  <li><a href="#display-k-rows-of-the-original-dataset" id="toc-display-k-rows-of-the-original-dataset" class="nav-link" data-scroll-target="#display-k-rows-of-the-original-dataset">Display k rows of the original dataset</a></li>
+  <li><a href="#total-number-of-na-values-in-the-dataset" id="toc-total-number-of-na-values-in-the-dataset" class="nav-link" data-scroll-target="#total-number-of-na-values-in-the-dataset">Total number of NA values in the dataset</a></li>
+  <li><a href="#number-of-na-values-per-column-top-8" id="toc-number-of-na-values-per-column-top-8" class="nav-link" data-scroll-target="#number-of-na-values-per-column-top-8">Number of NA values per column (top 8)</a></li>
+  <li><a href="#create-a-new-dataset-by-replacing-na-values-according-to-the-specified-rules" id="toc-create-a-new-dataset-by-replacing-na-values-according-to-the-specified-rules" class="nav-link" data-scroll-target="#create-a-new-dataset-by-replacing-na-values-according-to-the-specified-rules">Create a new dataset by replacing NA values according to the specified rules</a></li>
+  <li><a href="#print-outputs-for-the-new-data-frame" id="toc-print-outputs-for-the-new-data-frame" class="nav-link" data-scroll-target="#print-outputs-for-the-new-data-frame">Print outputs for the new data frame</a></li>
+  <li><a href="#total-number-of-na-values-remaining-in-the-new-data-frame" id="toc-total-number-of-na-values-remaining-in-the-new-data-frame" class="nav-link" data-scroll-target="#total-number-of-na-values-remaining-in-the-new-data-frame">Total number of NA values remaining in the new data frame</a></li>
+  <li><a href="#it-should-return-false-if-done-correctly" id="toc-it-should-return-false-if-done-correctly" class="nav-link" data-scroll-target="#it-should-return-false-if-done-correctly">It should return FALSE if done correctly</a></li>
   </ul>
 </nav>
 </nav>
@@ -424,13 +432,26 @@ Complex systems are emergent systems influenced by many interacting factors such
 </section>
 <section id="b" class="level2">
 <h2 class="anchored" data-anchor-id="b">(b)</h2>
-<p>library(dslabs)</p>
-<p>data(“polls_us_election_2016”) data &lt;- polls_us_election_2016</p>
-<p>my_first &lt;- “Sena” my_birth_year &lt;- 2002</p>
-<p>k &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8 k</p>
+</section>
+</section>
+<section id="load-the-dataset-and-define-variables" class="level1">
+<h1>Load the dataset and define variables</h1>
+<p>library(dslabs) data(“polls_us_election_2016”) data &lt;- polls_us_election_2016 my_first &lt;- “Sena” my_birth_year &lt;- 2002 k &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8 k</p>
+</section>
+<section id="display-k-rows-of-the-original-dataset" class="level1">
+<h1>Display k rows of the original dataset</h1>
 <p>if (k %% 2 == 0) { head(data, k) } else { tail(data, k) }</p>
+</section>
+<section id="total-number-of-na-values-in-the-dataset" class="level1">
+<h1>Total number of NA values in the dataset</h1>
 <p>sum(is.na(data))</p>
+</section>
+<section id="number-of-na-values-per-column-top-8" class="level1">
+<h1>Number of NA values per column (top 8)</h1>
 <p>na_counts &lt;- sort(colSums(is.na(data)), decreasing = TRUE) head(na_counts, 8)</p>
+</section>
+<section id="create-a-new-dataset-by-replacing-na-values-according-to-the-specified-rules" class="level1">
+<h1>Create a new dataset by replacing NA values according to the specified rules</h1>
 <p>new_data &lt;- data</p>
 <p>for (col in names(new_data)) {</p>
 <p>if (is.numeric(new_data[[col]])) { new_data[[col]][is.na(new_data[[col]])] &lt;- my_birth_year + k</p>
@@ -438,12 +459,20 @@ Complex systems are emergent systems influenced by many interacting factors such
 <p>} else if (is.factor(new_data[[col]])) { new_data[[col]] &lt;- as.character(new_data[[col]]) new_data[[col]][is.na(new_data[[col]])] &lt;- paste0(my_first, “_“, k)</p>
 <p>} else if (is.character(new_data[[col]])) { new_data[[col]][is.na(new_data[[col]])] &lt;- paste0(my_first, “_“, k) }</p>
 <p>}</p>
+</section>
+<section id="print-outputs-for-the-new-data-frame" class="level1">
+<h1>Print outputs for the new data frame</h1>
 <p>if (k %% 2 == 0) { head(new_data, k) } else { tail(new_data, k) }</p>
+</section>
+<section id="total-number-of-na-values-remaining-in-the-new-data-frame" class="level1">
+<h1>Total number of NA values remaining in the new data frame</h1>
 <p>sum(is.na(new_data))</p>
+</section>
+<section id="it-should-return-false-if-done-correctly" class="level1">
+<h1>It should return FALSE if done correctly</h1>
 <p>anyNA(new_data)</p>
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
