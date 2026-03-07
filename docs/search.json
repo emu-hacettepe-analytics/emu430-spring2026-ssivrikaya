@@ -7,46 +7,55 @@
     "text": "I’m honored to be a member of the [group name] project team.\nBelow, you’ll find a brief summary of our project. To access a detailed project description, please go to https://[your-project-url].\nSummary\n[provide a biref summary of your project]\n\n\n\n Back to top"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to My Analytics Lab",
-    "section": "",
-    "text": "Hello! My name is xxx xxxx.\nThis is my personal webpage.\nPlease stay tuned to follow my works on data analytics, blog posts, and more.\nThis is our template.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "assignments/assignment-2.html",
-    "href": "assignments/assignment-2.html",
-    "title": "Assignment 2",
-    "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing."
+    "text": "B.S., Industrial Engineering, Hacettepe University, Turkey, 2022 - ongoing\nGPA: 3.64 / 4.00"
   },
   {
-    "objectID": "about.html#employements",
-    "href": "about.html#employements",
+    "objectID": "about.html#employments",
+    "href": "about.html#employments",
     "title": "About Me",
-    "section": "Employements",
-    "text": "Employements\n\nFirm xxx, position xx, year xxx\nFirm yyy, position yyy, year yyy"
+    "section": "Employments",
+    "text": "Employments\n\nPhilip Morris International, Integrated Business Planning (IBP) Long-Term Intern (Part-Time), 2025 - ongoing"
   },
   {
     "objectID": "about.html#internships",
     "href": "about.html#internships",
     "title": "About Me",
     "section": "Internships",
-    "text": "Internships\n\nFirm aaa, position xx, year xxx\nFirm bbb, position yyy, year yyy"
+    "text": "Internships\n\nTurkish Airlines, Digitalisation & Continuous Improvement Intern, 2025\nJotform, Data Analyst Intern, 2024\nTotalEnergies, Supply & Trade Intern, 2024"
   },
   {
     "objectID": "assignments/assignment-1.html",
     "href": "assignments/assignment-1.html",
     "title": "Assignment 1",
     "section": "",
-    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts."
+    "text": "My first assignment has two parts.\n\n\n\n\nIn this talk, Cem Vardar shares his journey from an Industrial Engineering background at METU to leading data science teams at Carvana. He reframes data science not as a completely separate field, but as a modern tool in an engineer’s toolkit for solving complex system problems.\nA standout concept he discusses is evolutionary design. He argues against the “rip and replace” method for complex systems and instead suggests that engineers should start with simple interventions and allow the system to evolve over time, similar to biological evolution.\nHe also highlights the 80/20 rule (Pareto Principle) in skill development, explaining that mastering a small but useful part of a technical tool such as SQL can provide a large share of its practical value in real-world work.\nOverall, the talk emphasizes that strong analytical thinking, problem-solving ability, and understanding complex systems are more important than constantly chasing new technologies.\n\n\n\n\n\nCem Vardar mentions that simple solutions are often preferred over complex ones. Why does he advocate an evolutionary approach instead of designing a perfect system from scratch?\nAnswer:\nComplex systems are emergent systems influenced by many interacting factors such as human behavior, operational constraints, and company culture. Designing a perfect system from scratch often fails because it relies on unrealistic assumptions. An evolutionary approach allows engineers to gradually improve the system while observing how changes affect performance.\n\n\n\nAccording to Cem Vardar, which technical tool has remained a constant must-have throughout his 20-year career?\n\nDeep Learning Frameworks\n\nSQL (Structured Query Language)\n\nNatural Language Processing\n\nDiscrete Event Simulation\n\nCorrect Answer: B) SQL\n\n\n\n\n\n\nlibrary(dslabs)\ndata(“polls_us_election_2016”) data &lt;- polls_us_election_2016\nmy_first &lt;- “Sena” my_birth_year &lt;- 2002\nk &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8 k\nif (k %% 2 == 0) { head(data, k) } else { tail(data, k) }\nsum(is.na(data))\nna_counts &lt;- sort(colSums(is.na(data)), decreasing = TRUE) head(na_counts, 8)\nnew_data &lt;- data\nfor (col in names(new_data)) {\nif (is.numeric(new_data[[col]])) { new_data[[col]][is.na(new_data[[col]])] &lt;- my_birth_year + k\n} else if (inherits(new_data[[col]], “Date”)) { new_data[[col]][is.na(new_data[[col]])] &lt;- as.Date(“2002-01-19”)\n} else if (is.factor(new_data[[col]])) { new_data[[col]] &lt;- as.character(new_data[[col]]) new_data[[col]][is.na(new_data[[col]])] &lt;- paste0(my_first, “_“, k)\n} else if (is.character(new_data[[col]])) { new_data[[col]][is.na(new_data[[col]])] &lt;- paste0(my_first, “_“, k) }\n}\nif (k %% 2 == 0) { head(new_data, k) } else { tail(new_data, k) }\nsum(is.na(new_data))\nanyNA(new_data)",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html#a",
+    "href": "assignments/assignment-1.html#a",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "In this talk, Cem Vardar shares his journey from an Industrial Engineering background at METU to leading data science teams at Carvana. He reframes data science not as a completely separate field, but as a modern tool in an engineer’s toolkit for solving complex system problems.\nA standout concept he discusses is evolutionary design. He argues against the “rip and replace” method for complex systems and instead suggests that engineers should start with simple interventions and allow the system to evolve over time, similar to biological evolution.\nHe also highlights the 80/20 rule (Pareto Principle) in skill development, explaining that mastering a small but useful part of a technical tool such as SQL can provide a large share of its practical value in real-world work.\nOverall, the talk emphasizes that strong analytical thinking, problem-solving ability, and understanding complex systems are more important than constantly chasing new technologies.\n\n\n\n\n\nCem Vardar mentions that simple solutions are often preferred over complex ones. Why does he advocate an evolutionary approach instead of designing a perfect system from scratch?\nAnswer:\nComplex systems are emergent systems influenced by many interacting factors such as human behavior, operational constraints, and company culture. Designing a perfect system from scratch often fails because it relies on unrealistic assumptions. An evolutionary approach allows engineers to gradually improve the system while observing how changes affect performance.\n\n\n\nAccording to Cem Vardar, which technical tool has remained a constant must-have throughout his 20-year career?\n\nDeep Learning Frameworks\n\nSQL (Structured Query Language)\n\nNatural Language Processing\n\nDiscrete Event Simulation\n\nCorrect Answer: B) SQL",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html#b",
+    "href": "assignments/assignment-1.html#b",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "library(dslabs)\ndata(“polls_us_election_2016”) data &lt;- polls_us_election_2016\nmy_first &lt;- “Sena” my_birth_year &lt;- 2002\nk &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8 k\nif (k %% 2 == 0) { head(data, k) } else { tail(data, k) }\nsum(is.na(data))\nna_counts &lt;- sort(colSums(is.na(data)), decreasing = TRUE) head(na_counts, 8)\nnew_data &lt;- data\nfor (col in names(new_data)) {\nif (is.numeric(new_data[[col]])) { new_data[[col]][is.na(new_data[[col]])] &lt;- my_birth_year + k\n} else if (inherits(new_data[[col]], “Date”)) { new_data[[col]][is.na(new_data[[col]])] &lt;- as.Date(“2002-01-19”)\n} else if (is.factor(new_data[[col]])) { new_data[[col]] &lt;- as.character(new_data[[col]]) new_data[[col]][is.na(new_data[[col]])] &lt;- paste0(my_first, “_“, k)\n} else if (is.character(new_data[[col]])) { new_data[[col]][is.na(new_data[[col]])] &lt;- paste0(my_first, “_“, k) }\n}\nif (k %% 2 == 0) { head(new_data, k) } else { tail(new_data, k) }\nsum(is.na(new_data))\nanyNA(new_data)",
+    "crumbs": [
+      "Assignment 1"
+    ]
   },
   {
     "objectID": "assignments.html",
@@ -57,6 +66,23 @@
     "crumbs": [
       "My Assignments"
     ]
+  },
+  {
+    "objectID": "assignments/assignment-2.html",
+    "href": "assignments/assignment-2.html",
+    "title": "Assignment 2",
+    "section": "",
+    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Assignment 2"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Analytics Lab",
+    "section": "",
+    "text": "Hello! My name is Sena Sivrikaya.\nI am a senior Industrial Engineering student at Hacettepe University in Ankara, Türkiye. My academic interests include data analytics, operations research, optimization, and decision support systems.\nThis is my personal webpage for the EMU430 Data Analytics course, where I will share my coursework, assignments, and projects related to data analytics.\nPlease stay tuned to follow my work on data analytics, industrial engineering applications, and more.\n\n\n\n Back to top"
   },
   {
     "objectID": "posts.html",

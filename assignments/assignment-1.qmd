@@ -4,12 +4,96 @@ title: "Assignment 1"
 
 # Assignment 1
 
-```{r}
-1 + 1
-```
-
 My first assignment has two parts.
 
 ## (a)
 
+### Brief Summary
+
+In this talk, Cem Vardar shares his journey from an Industrial Engineering background at METU to leading data science teams at Carvana. He reframes data science not as a completely separate field, but as a modern tool in an engineer’s toolkit for solving complex system problems.
+
+A standout concept he discusses is evolutionary design. He argues against the “rip and replace” method for complex systems and instead suggests that engineers should start with simple interventions and allow the system to evolve over time, similar to biological evolution.
+
+He also highlights the 80/20 rule (Pareto Principle) in skill development, explaining that mastering a small but useful part of a technical tool such as SQL can provide a large share of its practical value in real-world work.
+
+Overall, the talk emphasizes that strong analytical thinking, problem-solving ability, and understanding complex systems are more important than constantly chasing new technologies.
+
+### Questions & Answers
+
+#### Open-Ended Question
+
+Cem Vardar mentions that simple solutions are often preferred over complex ones. Why does he advocate an evolutionary approach instead of designing a perfect system from scratch?
+
+**Answer:**  
+Complex systems are emergent systems influenced by many interacting factors such as human behavior, operational constraints, and company culture. Designing a perfect system from scratch often fails because it relies on unrealistic assumptions. An evolutionary approach allows engineers to gradually improve the system while observing how changes affect performance.
+
+#### Multiple-Choice Question
+
+According to Cem Vardar, which technical tool has remained a constant must-have throughout his 20-year career?
+
+A) Deep Learning Frameworks  
+B) SQL (Structured Query Language)  
+C) Natural Language Processing  
+D) Discrete Event Simulation  
+
+**Correct Answer:** B) SQL
+
+---
+
 ## (b)
+
+```{r}
+library(dslabs)
+
+data("polls_us_election_2016")
+data <- polls_us_election_2016
+
+my_first <- "Sena"
+my_birth_year <- 2002
+
+k <- (nchar(my_first) + my_birth_year) %% 15 + 8
+k
+
+if (k %% 2 == 0) {
+  head(data, k)
+} else {
+  tail(data, k)
+}
+
+sum(is.na(data))
+
+na_counts <- sort(colSums(is.na(data)), decreasing = TRUE)
+head(na_counts, 8)
+
+new_data <- data
+
+for (col in names(new_data)) {
+
+  if (is.numeric(new_data[[col]])) {
+    new_data[[col]][is.na(new_data[[col]])] <- my_birth_year + k
+
+  } else if (inherits(new_data[[col]], "Date")) {
+    new_data[[col]][is.na(new_data[[col]])] <- as.Date("2002-01-19")
+
+  } else if (is.factor(new_data[[col]])) {
+    new_data[[col]] <- as.character(new_data[[col]])
+    new_data[[col]][is.na(new_data[[col]])] <- paste0(my_first, "_", k)
+
+  } else if (is.character(new_data[[col]])) {
+    new_data[[col]][is.na(new_data[[col]])] <- paste0(my_first, "_", k)
+  }
+
+}
+
+if (k %% 2 == 0) {
+  head(new_data, k)
+} else {
+  tail(new_data, k)
+}
+
+sum(is.na(new_data))
+
+
+anyNA(new_data)
+
+

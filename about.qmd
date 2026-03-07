@@ -1,30 +1,42 @@
 ---
 title: "About Me"
-sidebar: false 
+sidebar: false
 ---
 
 # Education
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+- B.S., Industrial Engineering, Hacettepe University, Turkey, 2022 - ongoing  
+  GPA: 3.64 / 4.00 
 
 # Work Experience
 
-## Employements
+## Employments
 
-1.  Firm xxx, position xx, year xxx
-
-2.  Firm yyy, position yyy, year yyy
+1. Philip Morris International, Integrated Business Planning (IBP) Long-Term Intern (Part-Time), 2025 - ongoing
 
 ## Internships
 
-1.  Firm aaa, position xx, year xxx
+1. Turkish Airlines, Digitalisation & Continuous Improvement Intern, 2025  
 
-2.  Firm bbb, position yyy, year yyy
+2. Jotform, Data Analyst Intern, 2024  
+
+3. TotalEnergies, Supply & Trade Intern, 2024  
 
 # Projects
 
+1. **mpci: Python Package for Multivariate Process Capability Indices**  
+   Co-author and lead developer of an open-source Python library implementing multivariate process capability indices.
+
+2. **AI-Powered Personalized Leadership Development System (ROKETSAN)**  
+   Developed a stochastic and optimization-based system combining Structural Equation Modeling and Markov Chains to recommend personalized training programs.
+
+3. **Space Logistics Optimization for Lunar-to-GEO Refueling**  
+   Developed an optimization-based decision support model for satellite refueling logistics using Constraint Programming.
+
 # Competencies
 
-R, Quarto, Git, Python
+Python, R, Git/GitHub, Quarto, SQL, Optimization Modeling, Data Analytics
 
 # Hobbies
+
+Reading about technology and data science, hiking, traveling, and exploring new research areas in analytics and optimization.
