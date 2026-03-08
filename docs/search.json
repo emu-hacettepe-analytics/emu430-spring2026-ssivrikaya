@@ -42,6 +42,55 @@
     "text": "Internships\n\nTurkish Airlines, Digitalisation & Continuous Improvement Intern, 2025\nJotform, Data Analyst Intern, 2024\nTotalEnergies, Supply & Trade Intern, 2024"
   },
   {
+    "objectID": "posts/healthy-oat-breakfast.html",
+    "href": "posts/healthy-oat-breakfast.html",
+    "title": "A Healthy and Practical Breakfast Idea",
+    "section": "",
+    "text": "A simple breakfast can still be both healthy and satisfying.\nOne practical option is to cook finely ground oats with lactose-free milk and then top it with:\n\nstrawberries\nblackberries\nsmall pieces of 80% dark chocolate\n\n\n\nThis breakfast can be a nice balance of:\n\ncarbohydrates from oats\nfruit for freshness and natural sweetness\na richer taste from dark chocolate\n\nIt is also easy to prepare and works well for busy mornings.\n\n\n\nI like this kind of breakfast because it is both quick and comforting. It feels more nourishing than many packaged snacks, while still being practical enough for a student or intern schedule."
+  },
+  {
+    "objectID": "posts/healthy-oat-breakfast.html#why-is-it-a-good-option",
+    "href": "posts/healthy-oat-breakfast.html#why-is-it-a-good-option",
+    "title": "A Healthy and Practical Breakfast Idea",
+    "section": "",
+    "text": "This breakfast can be a nice balance of:\n\ncarbohydrates from oats\nfruit for freshness and natural sweetness\na richer taste from dark chocolate\n\nIt is also easy to prepare and works well for busy mornings."
+  },
+  {
+    "objectID": "posts/healthy-oat-breakfast.html#why-i-like-it",
+    "href": "posts/healthy-oat-breakfast.html#why-i-like-it",
+    "title": "A Healthy and Practical Breakfast Idea",
+    "section": "",
+    "text": "I like this kind of breakfast because it is both quick and comforting. It feels more nourishing than many packaged snacks, while still being practical enough for a student or intern schedule."
+  },
+  {
+    "objectID": "posts/graduate-school-exams-and-fields.html",
+    "href": "posts/graduate-school-exams-and-fields.html",
+    "title": "Graduate School Exams and Common Master’s Fields for Industrial Engineers",
+    "section": "",
+    "text": "Students who apply for graduate school, especially abroad, may need to take standardized exams such as:\n\nIELTS\nGRE\nGMAT\n\n\n\n\n\nIELTS measures English language proficiency, especially for academic and international study environments.\n\n\n\nGRE is a general graduate admissions exam that may be required by many master’s and PhD programs.\n\n\n\nGMAT is commonly associated with business-related graduate programs, especially management and MBA-style programs.\n\n\n\n\nIndustrial Engineering graduates often continue in fields such as:\n\nIndustrial Engineering\nEngineering Management\nSystems Engineering\n\nThese areas are popular because they build naturally on the analytical, optimization, and systems-thinking background of industrial engineering.\n\n\n\nIndustrial engineers are trained to understand systems, improve processes, and support decision-making. Because of this, they often fit well into graduate programs that combine:\n\nanalytics\noperations\nmanagement\nsystems thinking"
+  },
+  {
+    "objectID": "posts/graduate-school-exams-and-fields.html#what-are-these-exams",
+    "href": "posts/graduate-school-exams-and-fields.html#what-are-these-exams",
+    "title": "Graduate School Exams and Common Master’s Fields for Industrial Engineers",
+    "section": "",
+    "text": "IELTS measures English language proficiency, especially for academic and international study environments.\n\n\n\nGRE is a general graduate admissions exam that may be required by many master’s and PhD programs.\n\n\n\nGMAT is commonly associated with business-related graduate programs, especially management and MBA-style programs."
+  },
+  {
+    "objectID": "posts/graduate-school-exams-and-fields.html#common-masters-fields-for-industrial-engineers",
+    "href": "posts/graduate-school-exams-and-fields.html#common-masters-fields-for-industrial-engineers",
+    "title": "Graduate School Exams and Common Master’s Fields for Industrial Engineers",
+    "section": "",
+    "text": "Industrial Engineering graduates often continue in fields such as:\n\nIndustrial Engineering\nEngineering Management\nSystems Engineering\n\nThese areas are popular because they build naturally on the analytical, optimization, and systems-thinking background of industrial engineering."
+  },
+  {
+    "objectID": "posts/graduate-school-exams-and-fields.html#why-these-fields-are-common",
+    "href": "posts/graduate-school-exams-and-fields.html#why-these-fields-are-common",
+    "title": "Graduate School Exams and Common Master’s Fields for Industrial Engineers",
+    "section": "",
+    "text": "Industrial engineers are trained to understand systems, improve processes, and support decision-making. Because of this, they often fit well into graduate programs that combine:\n\nanalytics\noperations\nmanagement\nsystems thinking"
+  },
+  {
     "objectID": "assignments/assignment-1.html",
     "href": "assignments/assignment-1.html",
     "title": "Assignment 1",
@@ -90,6 +139,76 @@
     "crumbs": [
       "Assignment 2"
     ]
+  },
+  {
+    "objectID": "posts/trend-topics-explained.html",
+    "href": "posts/trend-topics-explained.html",
+    "title": "What Do IoT, Digital Twins, Federated Learning, and Agentic AI Mean?",
+    "section": "",
+    "text": "Many technology topics are becoming more common in engineering and data-driven industries. Here is a short explanation of a few important ones.\n\n\nIoT (Internet of Things) refers to physical devices connected to the internet so that they can collect, send, and receive data.\nExamples: - smart watches - factory sensors - connected home devices\n\n\n\nA digital twin is a digital representation of a real-world object, process, or system.\nIt can be used to: - monitor performance - simulate changes - predict future behavior\n\n\n\nFederated learning is a machine learning approach where models are trained across multiple devices or institutions without directly sharing raw data.\nThis is important in areas where privacy matters, such as: - healthcare - finance - mobile applications\n\n\n\nAgentic AI refers to AI systems that can act more independently by planning steps, making decisions, and carrying out tasks toward a goal.\nInstead of only answering one prompt at a time, these systems can behave more like agents that: - reason through tasks - choose actions - interact with tools or information sources\n\n\n\nThese concepts are important because they show how engineering, data, and intelligent systems are becoming more connected in modern applications."
+  },
+  {
+    "objectID": "posts/trend-topics-explained.html#iot",
+    "href": "posts/trend-topics-explained.html#iot",
+    "title": "What Do IoT, Digital Twins, Federated Learning, and Agentic AI Mean?",
+    "section": "",
+    "text": "IoT (Internet of Things) refers to physical devices connected to the internet so that they can collect, send, and receive data.\nExamples: - smart watches - factory sensors - connected home devices"
+  },
+  {
+    "objectID": "posts/trend-topics-explained.html#digital-twins",
+    "href": "posts/trend-topics-explained.html#digital-twins",
+    "title": "What Do IoT, Digital Twins, Federated Learning, and Agentic AI Mean?",
+    "section": "",
+    "text": "A digital twin is a digital representation of a real-world object, process, or system.\nIt can be used to: - monitor performance - simulate changes - predict future behavior"
+  },
+  {
+    "objectID": "posts/trend-topics-explained.html#federated-learning",
+    "href": "posts/trend-topics-explained.html#federated-learning",
+    "title": "What Do IoT, Digital Twins, Federated Learning, and Agentic AI Mean?",
+    "section": "",
+    "text": "Federated learning is a machine learning approach where models are trained across multiple devices or institutions without directly sharing raw data.\nThis is important in areas where privacy matters, such as: - healthcare - finance - mobile applications"
+  },
+  {
+    "objectID": "posts/trend-topics-explained.html#agentic-ai",
+    "href": "posts/trend-topics-explained.html#agentic-ai",
+    "title": "What Do IoT, Digital Twins, Federated Learning, and Agentic AI Mean?",
+    "section": "",
+    "text": "Agentic AI refers to AI systems that can act more independently by planning steps, making decisions, and carrying out tasks toward a goal.\nInstead of only answering one prompt at a time, these systems can behave more like agents that: - reason through tasks - choose actions - interact with tools or information sources"
+  },
+  {
+    "objectID": "posts/trend-topics-explained.html#why-these-topics-matter",
+    "href": "posts/trend-topics-explained.html#why-these-topics-matter",
+    "title": "What Do IoT, Digital Twins, Federated Learning, and Agentic AI Mean?",
+    "section": "",
+    "text": "These concepts are important because they show how engineering, data, and intelligent systems are becoming more connected in modern applications."
+  },
+  {
+    "objectID": "posts/reformer-vs-mat-pilates.html",
+    "href": "posts/reformer-vs-mat-pilates.html",
+    "title": "Reformer Pilates vs. Mat Pilates",
+    "section": "",
+    "text": "Pilates can be practiced in different forms, and two of the most common ones are reformer pilates and mat pilates.\n\n\nReformer pilates is performed on a specialized machine called a reformer. This machine uses springs, straps, and a sliding carriage to create resistance and support.\n\n\n\nProvides adjustable resistance\nCan support posture and alignment\nAllows a wider variety of movements\nOften feels more guided for beginners\n\n\n\n\n\nMat pilates is performed on the floor using a mat. It mainly relies on body weight, balance, and core control.\n\n\n\nDoes not require large equipment\nFocuses strongly on body awareness and control\nCan be practiced more easily at home\nUsually more accessible and affordable\n\n\n\n\n\nNeither one is universally better. The best option depends on your goals.\n\nIf you want guided resistance and equipment-based exercises, reformer pilates may be more suitable.\nIf you want a simpler and more accessible routine, mat pilates can be a great choice.\n\nBoth forms can improve posture, flexibility, balance, and core strength."
+  },
+  {
+    "objectID": "posts/reformer-vs-mat-pilates.html#reformer-pilates",
+    "href": "posts/reformer-vs-mat-pilates.html#reformer-pilates",
+    "title": "Reformer Pilates vs. Mat Pilates",
+    "section": "",
+    "text": "Reformer pilates is performed on a specialized machine called a reformer. This machine uses springs, straps, and a sliding carriage to create resistance and support.\n\n\n\nProvides adjustable resistance\nCan support posture and alignment\nAllows a wider variety of movements\nOften feels more guided for beginners"
+  },
+  {
+    "objectID": "posts/reformer-vs-mat-pilates.html#mat-pilates",
+    "href": "posts/reformer-vs-mat-pilates.html#mat-pilates",
+    "title": "Reformer Pilates vs. Mat Pilates",
+    "section": "",
+    "text": "Mat pilates is performed on the floor using a mat. It mainly relies on body weight, balance, and core control.\n\n\n\nDoes not require large equipment\nFocuses strongly on body awareness and control\nCan be practiced more easily at home\nUsually more accessible and affordable"
+  },
+  {
+    "objectID": "posts/reformer-vs-mat-pilates.html#which-one-is-better",
+    "href": "posts/reformer-vs-mat-pilates.html#which-one-is-better",
+    "title": "Reformer Pilates vs. Mat Pilates",
+    "section": "",
+    "text": "Neither one is universally better. The best option depends on your goals.\n\nIf you want guided resistance and equipment-based exercises, reformer pilates may be more suitable.\nIf you want a simpler and more accessible routine, mat pilates can be a great choice.\n\nBoth forms can improve posture, flexibility, balance, and core strength."
   },
   {
     "objectID": "index.html",

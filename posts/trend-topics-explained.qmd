@@ -1,0 +1,47 @@
+---
+title: "What Do IoT, Digital Twins, Federated Learning, and Agentic AI Mean?"
+---
+
+# What Do IoT, Digital Twins, Federated Learning, and Agentic AI Mean?
+
+Many technology topics are becoming more common in engineering and data-driven industries. Here is a short explanation of a few important ones.
+
+## IoT
+
+**IoT (Internet of Things)** refers to physical devices connected to the internet so that they can collect, send, and receive data.
+
+Examples:
+- smart watches
+- factory sensors
+- connected home devices
+
+## Digital Twins
+
+A **digital twin** is a digital representation of a real-world object, process, or system.
+
+It can be used to:
+- monitor performance
+- simulate changes
+- predict future behavior
+
+## Federated Learning
+
+**Federated learning** is a machine learning approach where models are trained across multiple devices or institutions **without directly sharing raw data**.
+
+This is important in areas where privacy matters, such as:
+- healthcare
+- finance
+- mobile applications
+
+## Agentic AI
+
+**Agentic AI** refers to AI systems that can act more independently by planning steps, making decisions, and carrying out tasks toward a goal.
+
+Instead of only answering one prompt at a time, these systems can behave more like agents that:
+- reason through tasks
+- choose actions
+- interact with tools or information sources
+
+## Why these topics matter
+
+These concepts are important because they show how engineering, data, and intelligent systems are becoming more connected in modern applications.
