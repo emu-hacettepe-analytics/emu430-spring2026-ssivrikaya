@@ -43,3 +43,7 @@ Python, R, Git/GitHub, Quarto, SQL, Optimization Modeling, Data Analytics
 # Hobbies
 
 Reading about technology and data science, hiking, traveling, and exploring new research areas in analytics and optimization.
+
+# Resume
+
+You can download my resume here: [CV](cv.pdf)
