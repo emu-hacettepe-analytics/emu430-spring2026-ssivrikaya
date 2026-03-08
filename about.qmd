@@ -35,8 +35,6 @@ My academic interests focus on **data analytics, optimization, operations resear
 2.  **AI-Powered Personalized Leadership Development System (ROKETSAN)**\
     Developed a stochastic and optimization-based system combining Structural Equation Modeling and Markov Chains to recommend personalized training programs.
 
-3.  **Space Logistics Optimization for Lunar-to-GEO Refueling**\
-    Developed an optimization-based decision support model for satellite refueling logistics using Constraint Programming.
 
 # Competencies
 
