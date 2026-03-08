@@ -2,7 +2,7 @@
 title: "Welcome to My Analytics Lab"
 sidebar: false
 ---
-![](profile.jpg){width=30% fig-align="center"}
+![](profile.jpg){.profile-pic}
 
 # Welcome
 
