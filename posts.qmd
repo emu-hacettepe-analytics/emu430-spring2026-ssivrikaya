@@ -5,22 +5,12 @@ sidebar: false
 
 # My Posts
 
-This page is where I share short notes on **life, learning, and well-being**.
+This page contains short notes on **well-being, education, technology, and everyday practical ideas**.
 
-Alongside my coursework and projects, I also enjoy writing about experiences and ideas that shape how I study, work, and live.
+## Posts
 
-## Topics I Want to Share
-
-### Travel Notes
-Short reflections from countries, cities, and places I visit.
-
-### Well-Being
-Thoughts on balance, motivation, healthy routines, and student life.
-
-### Healthy Snack Ideas
-Simple and practical snack ideas that are easy to prepare and fit a busy schedule.
-
-## Coming Soon
-
-I plan to share posts in these areas over time.
+- [Reformer Pilates vs. Mat Pilates](posts/reformer-vs-mat-pilates.qmd)
+- [A Healthy and Practical Breakfast Idea](posts/healthy-oat-breakfast.qmd)
+- [Graduate School Exams and Common Master's Fields for Industrial Engineers](posts/graduate-school-exams-and-fields.qmd)
+- [What Do IoT, Digital Twins, Federated Learning, and Agentic AI Mean?](posts/trend-topics-explained.qmd)
 
