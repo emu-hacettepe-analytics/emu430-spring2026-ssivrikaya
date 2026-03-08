@@ -2,7 +2,7 @@
 title: "Welcome to My Analytics Lab"
 sidebar: false
 ---
-![](/Users/senasivrikaya/Downloads/emu430/emu430-spring2026-ssivrikaya/profile.jpg){width=30% fig-align="center"}
+![](profile.jpg){width=30% fig-align="center"}
 
 # Welcome
 
