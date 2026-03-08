@@ -95,27 +95,107 @@
     "href": "assignments/assignment-1.html",
     "title": "Assignment 1",
     "section": "",
-    "text": "My first assignment has two parts.\n\n\n\n\nIn this talk, Cem Vardar shares his journey from an Industrial Engineering background at METU to leading data science teams at Carvana. He reframes data science not as a completely separate field, but as a modern tool in an engineer’s toolkit for solving complex system problems.\nA standout concept he discusses is evolutionary design. He argues against the “rip and replace” method for complex systems and instead suggests that engineers should start with simple interventions and allow the system to evolve over time, similar to biological evolution.\nHe also highlights the 80/20 rule (Pareto Principle) in skill development, explaining that mastering a small but useful part of a technical tool such as SQL can provide a large share of its practical value in real-world work.\nOverall, the talk emphasizes that strong analytical thinking, problem-solving ability, and understanding complex systems are more important than constantly chasing new technologies.\n\n\n\n\n\nCem Vardar mentions that simple solutions are often preferred over complex ones. Why does he advocate an evolutionary approach instead of designing a perfect system from scratch?\nAnswer:\nComplex systems are emergent systems influenced by many interacting factors such as human behavior, operational constraints, and company culture. Designing a perfect system from scratch often fails because it relies on unrealistic assumptions. An evolutionary approach allows engineers to gradually improve the system while observing how changes affect performance.\n\n\n\nAccording to Cem Vardar, which technical tool has remained a constant must-have throughout his 20-year career?\n\nDeep Learning Frameworks\n\nSQL (Structured Query Language)\n\nNatural Language Processing\n\nDiscrete Event Simulation\n\nCorrect Answer: B) SQL\n\n\n\n\n\n\n\n\nlibrary(dslabs) data(“polls_us_election_2016”) data &lt;- polls_us_election_2016 my_first &lt;- “Sena” my_birth_year &lt;- 2002 k &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8 k\n\n\n\nif (k %% 2 == 0) { head(data, k) } else { tail(data, k) }\n\n\n\nsum(is.na(data))\n\n\n\nna_counts &lt;- sort(colSums(is.na(data)), decreasing = TRUE) head(na_counts, 8)\n\n\n\nnew_data &lt;- data\nfor (col in names(new_data)) {\nif (is.numeric(new_data[[col]])) { new_data[[col]][is.na(new_data[[col]])] &lt;- my_birth_year + k\n} else if (inherits(new_data[[col]], “Date”)) { new_data[[col]][is.na(new_data[[col]])] &lt;- as.Date(“2002-01-19”)\n} else if (is.factor(new_data[[col]])) { new_data[[col]] &lt;- as.character(new_data[[col]]) new_data[[col]][is.na(new_data[[col]])] &lt;- paste0(my_first, “_“, k)\n} else if (is.character(new_data[[col]])) { new_data[[col]][is.na(new_data[[col]])] &lt;- paste0(my_first, “_“, k) }\n}\n\n\n\nif (k %% 2 == 0) { head(new_data, k) } else { tail(new_data, k) }\n\n\n\nsum(is.na(new_data))\n\n\n\nanyNA(new_data)",
+    "text": "My first assignment has two parts.",
     "crumbs": [
       "Assignment 1"
     ]
   },
   {
-    "objectID": "assignments/assignment-1.html#a",
-    "href": "assignments/assignment-1.html#a",
+    "objectID": "assignments/assignment-1.html#open-ended-question",
+    "href": "assignments/assignment-1.html#open-ended-question",
     "title": "Assignment 1",
-    "section": "",
-    "text": "In this talk, Cem Vardar shares his journey from an Industrial Engineering background at METU to leading data science teams at Carvana. He reframes data science not as a completely separate field, but as a modern tool in an engineer’s toolkit for solving complex system problems.\nA standout concept he discusses is evolutionary design. He argues against the “rip and replace” method for complex systems and instead suggests that engineers should start with simple interventions and allow the system to evolve over time, similar to biological evolution.\nHe also highlights the 80/20 rule (Pareto Principle) in skill development, explaining that mastering a small but useful part of a technical tool such as SQL can provide a large share of its practical value in real-world work.\nOverall, the talk emphasizes that strong analytical thinking, problem-solving ability, and understanding complex systems are more important than constantly chasing new technologies.\n\n\n\n\n\nCem Vardar mentions that simple solutions are often preferred over complex ones. Why does he advocate an evolutionary approach instead of designing a perfect system from scratch?\nAnswer:\nComplex systems are emergent systems influenced by many interacting factors such as human behavior, operational constraints, and company culture. Designing a perfect system from scratch often fails because it relies on unrealistic assumptions. An evolutionary approach allows engineers to gradually improve the system while observing how changes affect performance.\n\n\n\nAccording to Cem Vardar, which technical tool has remained a constant must-have throughout his 20-year career?\n\nDeep Learning Frameworks\n\nSQL (Structured Query Language)\n\nNatural Language Processing\n\nDiscrete Event Simulation\n\nCorrect Answer: B) SQL",
+    "section": "Open-Ended Question",
+    "text": "Open-Ended Question\nQuestion\nCem Vardar mentions that simple solutions are often preferred over complex ones. Why does he advocate an evolutionary approach instead of designing a perfect system from scratch?\nAnswer\nComplex systems are influenced by many interacting factors such as human behavior, operational constraints, and organizational culture. Designing a perfect system from scratch often relies on unrealistic assumptions. An evolutionary approach allows engineers to gradually improve the system while observing how each change affects performance.",
     "crumbs": [
       "Assignment 1"
     ]
   },
   {
-    "objectID": "assignments/assignment-1.html#b",
-    "href": "assignments/assignment-1.html#b",
+    "objectID": "assignments/assignment-1.html#multiple-choice-question",
+    "href": "assignments/assignment-1.html#multiple-choice-question",
     "title": "Assignment 1",
-    "section": "",
-    "text": "library(dslabs) data(“polls_us_election_2016”) data &lt;- polls_us_election_2016 my_first &lt;- “Sena” my_birth_year &lt;- 2002 k &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8 k\n\n\n\nif (k %% 2 == 0) { head(data, k) } else { tail(data, k) }\n\n\n\nsum(is.na(data))\n\n\n\nna_counts &lt;- sort(colSums(is.na(data)), decreasing = TRUE) head(na_counts, 8)\n\n\n\nnew_data &lt;- data\nfor (col in names(new_data)) {\nif (is.numeric(new_data[[col]])) { new_data[[col]][is.na(new_data[[col]])] &lt;- my_birth_year + k\n} else if (inherits(new_data[[col]], “Date”)) { new_data[[col]][is.na(new_data[[col]])] &lt;- as.Date(“2002-01-19”)\n} else if (is.factor(new_data[[col]])) { new_data[[col]] &lt;- as.character(new_data[[col]]) new_data[[col]][is.na(new_data[[col]])] &lt;- paste0(my_first, “_“, k)\n} else if (is.character(new_data[[col]])) { new_data[[col]][is.na(new_data[[col]])] &lt;- paste0(my_first, “_“, k) }\n}\n\n\n\nif (k %% 2 == 0) { head(new_data, k) } else { tail(new_data, k) }\n\n\n\nsum(is.na(new_data))\n\n\n\nanyNA(new_data)",
+    "section": "Multiple Choice Question",
+    "text": "Multiple Choice Question\nQuestion\nAccording to Cem Vardar, which technical tool has remained a constant must-have throughout his career?\n\nDeep Learning Frameworks\n\nSQL\n\nNatural Language Processing\n\nDiscrete Event Simulation\n\nCorrect Answer: B) SQL",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html#load-the-dataset",
+    "href": "assignments/assignment-1.html#load-the-dataset",
+    "title": "Assignment 1",
+    "section": "Load the dataset",
+    "text": "Load the dataset\n\nlibrary(dslabs)\n\ndata(\"polls_us_election_2016\")\ndata &lt;- polls_us_election_2016",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html#define-personal-variables",
+    "href": "assignments/assignment-1.html#define-personal-variables",
+    "title": "Assignment 1",
+    "section": "Define personal variables",
+    "text": "Define personal variables\n\nmy_first &lt;- \"Sena\"\nmy_birth_year &lt;- 2002\n\nk &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8\nk\n\n[1] 19",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html#display-rows-of-the-dataset",
+    "href": "assignments/assignment-1.html#display-rows-of-the-dataset",
+    "title": "Assignment 1",
+    "section": "Display rows of the dataset",
+    "text": "Display rows of the dataset\n\nif (k %% 2 == 0) {\n  head(data, k)\n} else {\n  tail(data, k)\n}\n\n              state  startdate    enddate                pollster grade\n4190  New Hampshire 2016-01-04 2016-01-06   Public Policy Polling    B+\n4191        Florida 2016-06-08 2016-06-19   Quinnipiac University    A-\n4192           Ohio 2016-06-08 2016-06-19   Quinnipiac University    A-\n4193       New York 2016-02-28 2016-03-03           Siena College     A\n4194 North Carolina 2016-09-27 2016-10-02   Quinnipiac University    A-\n4195 North Carolina 2016-02-14 2016-02-16               SurveyUSA     A\n4196 North Carolina 2016-05-20 2016-05-22   Public Policy Polling    B+\n4197       Kentucky 2016-09-30 2016-10-13                   Ipsos    A-\n4198        Florida 2016-07-30 2016-08-07   Quinnipiac University    A-\n4199   Pennsylvania 2016-06-08 2016-06-19   Quinnipiac University    A-\n4200           Ohio 2016-06-30 2016-07-11   Quinnipiac University    A-\n4201 North Carolina 2016-03-18 2016-03-20   Public Policy Polling    B+\n4202   South Dakota 2016-10-28 2016-11-02                   Ipsos    A-\n4203     Washington 2016-10-21 2016-11-02                   Ipsos    A-\n4204       Virginia 2016-09-16 2016-09-22                   Ipsos    A-\n4205      Wisconsin 2016-08-04 2016-08-07    Marquette University     A\n4206           Utah 2016-11-01 2016-11-07 Google Consumer Surveys     B\n4207         Oregon 2016-10-21 2016-11-02                   Ipsos    A-\n4208       Michigan 2016-01-23 2016-01-26                EPIC-MRA    A-\n     samplesize population rawpoll_clinton rawpoll_trump rawpoll_johnson\n4190       1036          v           50.00         36.00              NA\n4191        975         rv           42.00         36.00            7.00\n4192        971         rv           38.00         36.00            8.00\n4193        800         rv           57.00         34.00              NA\n4194        507         lv           46.00         43.00            7.00\n4195       1250         lv           43.00         45.00              NA\n4196        928          v           41.00         43.00            3.00\n4197        336         lv           39.38         53.08              NA\n4198       1056         lv           43.00         43.00            7.00\n4199        950         rv           39.00         36.00            9.00\n4200        955         rv           36.00         37.00            7.00\n4201        843          v           44.00         42.00              NA\n4202        170         lv           28.45         47.20              NA\n4203        538         lv           46.71         38.33              NA\n4204        452         lv           46.54         40.04              NA\n4205        683         lv           47.00         34.00            9.00\n4206        286         lv           21.33         35.05            9.99\n4207        446         lv           46.46         37.41              NA\n4208        600         lv           43.00         41.00              NA\n     rawpoll_mcmullin adjpoll_clinton adjpoll_trump adjpoll_johnson\n4190               NA        47.81869      35.91267              NA\n4191               NA        46.44439      41.33270        2.791570\n4192               NA        42.46502      41.36491        3.791570\n4193               NA        56.98850      38.83402              NA\n4194               NA        47.79437      44.86935        4.022323\n4195               NA        39.90517      44.40152              NA\n4196               NA        43.28262      47.12021       -0.036293\n4197               NA        38.34430      54.36357              NA\n4198               NA        45.19351      46.65680        3.448447\n4199               NA        43.35339      41.19061        4.791570\n4200               NA        40.73937      42.33380        2.936299\n4201               NA        42.13165      43.55006              NA\n4202               NA        26.57791      45.43384              NA\n4203               NA        45.56387      38.22545              NA\n4204               NA        46.47852      40.48017              NA\n4205               NA        48.74781      39.07778        4.705020\n4206               NA        26.65200      40.57738        9.705791\n4207               NA        45.12949      37.10720              NA\n4208               NA        42.14966      42.05508              NA\n     adjpoll_mcmullin\n4190               NA\n4191               NA\n4192               NA\n4193               NA\n4194               NA\n4195               NA\n4196               NA\n4197               NA\n4198               NA\n4199               NA\n4200               NA\n4201               NA\n4202               NA\n4203               NA\n4204               NA\n4205               NA\n4206               NA\n4207               NA\n4208               NA",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html#count-total-missing-values",
+    "href": "assignments/assignment-1.html#count-total-missing-values",
+    "title": "Assignment 1",
+    "section": "Count total missing values",
+    "text": "Count total missing values\n\nsum(is.na(data))\n\n[1] 11604",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html#count-missing-values-by-column",
+    "href": "assignments/assignment-1.html#count-missing-values-by-column",
+    "title": "Assignment 1",
+    "section": "Count missing values by column",
+    "text": "Count missing values by column\n\nna_counts &lt;- sort(colSums(is.na(data)), decreasing = TRUE)\nhead(na_counts, 8)\n\nrawpoll_mcmullin adjpoll_mcmullin  rawpoll_johnson  adjpoll_johnson \n            4178             4178             1409             1409 \n           grade       samplesize            state        startdate \n             429                1                0                0",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html#replace-missing-values",
+    "href": "assignments/assignment-1.html#replace-missing-values",
+    "title": "Assignment 1",
+    "section": "Replace missing values",
+    "text": "Replace missing values\n\nnew_data &lt;- data\n\nfor (col in names(new_data)) {\n\n  if (is.numeric(new_data[[col]])) {\n    new_data[[col]][is.na(new_data[[col]])] &lt;- my_birth_year + k\n\n  } else if (inherits(new_data[[col]], \"Date\")) {\n    new_data[[col]][is.na(new_data[[col]])] &lt;- as.Date(\"2002-01-19\")\n\n  } else if (is.factor(new_data[[col]])) {\n    new_data[[col]] &lt;- as.character(new_data[[col]])\n    new_data[[col]][is.na(new_data[[col]])] &lt;- paste0(my_first, \"_\", k)\n\n  } else if (is.character(new_data[[col]])) {\n    new_data[[col]][is.na(new_data[[col]])] &lt;- paste0(my_first, \"_\", k)\n  }\n\n}",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html#display-rows-of-the-cleaned-dataset",
+    "href": "assignments/assignment-1.html#display-rows-of-the-cleaned-dataset",
+    "title": "Assignment 1",
+    "section": "Display rows of the cleaned dataset",
+    "text": "Display rows of the cleaned dataset\n\nif (k %% 2 == 0) {\n  head(new_data, k)\n} else {\n  tail(new_data, k)\n}\n\n              state  startdate    enddate                pollster grade\n4190  New Hampshire 2016-01-04 2016-01-06   Public Policy Polling    B+\n4191        Florida 2016-06-08 2016-06-19   Quinnipiac University    A-\n4192           Ohio 2016-06-08 2016-06-19   Quinnipiac University    A-\n4193       New York 2016-02-28 2016-03-03           Siena College     A\n4194 North Carolina 2016-09-27 2016-10-02   Quinnipiac University    A-\n4195 North Carolina 2016-02-14 2016-02-16               SurveyUSA     A\n4196 North Carolina 2016-05-20 2016-05-22   Public Policy Polling    B+\n4197       Kentucky 2016-09-30 2016-10-13                   Ipsos    A-\n4198        Florida 2016-07-30 2016-08-07   Quinnipiac University    A-\n4199   Pennsylvania 2016-06-08 2016-06-19   Quinnipiac University    A-\n4200           Ohio 2016-06-30 2016-07-11   Quinnipiac University    A-\n4201 North Carolina 2016-03-18 2016-03-20   Public Policy Polling    B+\n4202   South Dakota 2016-10-28 2016-11-02                   Ipsos    A-\n4203     Washington 2016-10-21 2016-11-02                   Ipsos    A-\n4204       Virginia 2016-09-16 2016-09-22                   Ipsos    A-\n4205      Wisconsin 2016-08-04 2016-08-07    Marquette University     A\n4206           Utah 2016-11-01 2016-11-07 Google Consumer Surveys     B\n4207         Oregon 2016-10-21 2016-11-02                   Ipsos    A-\n4208       Michigan 2016-01-23 2016-01-26                EPIC-MRA    A-\n     samplesize population rawpoll_clinton rawpoll_trump rawpoll_johnson\n4190       1036          v           50.00         36.00         2021.00\n4191        975         rv           42.00         36.00            7.00\n4192        971         rv           38.00         36.00            8.00\n4193        800         rv           57.00         34.00         2021.00\n4194        507         lv           46.00         43.00            7.00\n4195       1250         lv           43.00         45.00         2021.00\n4196        928          v           41.00         43.00            3.00\n4197        336         lv           39.38         53.08         2021.00\n4198       1056         lv           43.00         43.00            7.00\n4199        950         rv           39.00         36.00            9.00\n4200        955         rv           36.00         37.00            7.00\n4201        843          v           44.00         42.00         2021.00\n4202        170         lv           28.45         47.20         2021.00\n4203        538         lv           46.71         38.33         2021.00\n4204        452         lv           46.54         40.04         2021.00\n4205        683         lv           47.00         34.00            9.00\n4206        286         lv           21.33         35.05            9.99\n4207        446         lv           46.46         37.41         2021.00\n4208        600         lv           43.00         41.00         2021.00\n     rawpoll_mcmullin adjpoll_clinton adjpoll_trump adjpoll_johnson\n4190             2021        47.81869      35.91267     2021.000000\n4191             2021        46.44439      41.33270        2.791570\n4192             2021        42.46502      41.36491        3.791570\n4193             2021        56.98850      38.83402     2021.000000\n4194             2021        47.79437      44.86935        4.022323\n4195             2021        39.90517      44.40152     2021.000000\n4196             2021        43.28262      47.12021       -0.036293\n4197             2021        38.34430      54.36357     2021.000000\n4198             2021        45.19351      46.65680        3.448447\n4199             2021        43.35339      41.19061        4.791570\n4200             2021        40.73937      42.33380        2.936299\n4201             2021        42.13165      43.55006     2021.000000\n4202             2021        26.57791      45.43384     2021.000000\n4203             2021        45.56387      38.22545     2021.000000\n4204             2021        46.47852      40.48017     2021.000000\n4205             2021        48.74781      39.07778        4.705020\n4206             2021        26.65200      40.57738        9.705791\n4207             2021        45.12949      37.10720     2021.000000\n4208             2021        42.14966      42.05508     2021.000000\n     adjpoll_mcmullin\n4190             2021\n4191             2021\n4192             2021\n4193             2021\n4194             2021\n4195             2021\n4196             2021\n4197             2021\n4198             2021\n4199             2021\n4200             2021\n4201             2021\n4202             2021\n4203             2021\n4204             2021\n4205             2021\n4206             2021\n4207             2021\n4208             2021",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html#check-remaining-na-values",
+    "href": "assignments/assignment-1.html#check-remaining-na-values",
+    "title": "Assignment 1",
+    "section": "Check remaining NA values",
+    "text": "Check remaining NA values\n\nsum(is.na(new_data))\n\n[1] 0\n\nanyNA(new_data)\n\n[1] FALSE",
     "crumbs": [
       "Assignment 1"
     ]

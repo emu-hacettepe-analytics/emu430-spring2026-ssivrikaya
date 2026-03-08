@@ -6,67 +6,96 @@ title: "Assignment 1"
 
 My first assignment has two parts.
 
-## (a)
+---
 
-### Brief Summary
+# (a) Brief Summary
 
-In this talk, Cem Vardar shares his journey from an Industrial Engineering background at METU to leading data science teams at Carvana. He reframes data science not as a completely separate field, but as a modern tool in an engineer’s toolkit for solving complex system problems.
+In this talk, Cem Vardar shares his journey from an Industrial Engineering background at METU to leading data science teams at Carvana. He explains that data science should not be seen as a completely separate discipline, but rather as a powerful tool that engineers can use to solve complex system problems.
 
-A standout concept he discusses is evolutionary design. He argues against the “rip and replace” method for complex systems and instead suggests that engineers should start with simple interventions and allow the system to evolve over time, similar to biological evolution.
+A key concept he highlights is **evolutionary design**. Instead of replacing systems completely with new solutions, he suggests starting with simple improvements and allowing systems to evolve gradually over time.
 
-He also highlights the 80/20 rule (Pareto Principle) in skill development, explaining that mastering a small but useful part of a technical tool such as SQL can provide a large share of its practical value in real-world work.
+He also emphasizes the **80/20 rule (Pareto principle)** in skill development. According to this idea, learning a small but important part of a technical tool such as SQL can provide most of its practical value in real-world applications.
 
-Overall, the talk emphasizes that strong analytical thinking, problem-solving ability, and understanding complex systems are more important than constantly chasing new technologies.
-
-### Questions & Answers
-
-#### Open-Ended Question
-
-Cem Vardar mentions that simple solutions are often preferred over complex ones. Why does he advocate an evolutionary approach instead of designing a perfect system from scratch?
-
-**Answer:**  
-Complex systems are emergent systems influenced by many interacting factors such as human behavior, operational constraints, and company culture. Designing a perfect system from scratch often fails because it relies on unrealistic assumptions. An evolutionary approach allows engineers to gradually improve the system while observing how changes affect performance.
-
-#### Multiple-Choice Question
-
-According to Cem Vardar, which technical tool has remained a constant must-have throughout his 20-year career?
-
-A) Deep Learning Frameworks  
-B) SQL (Structured Query Language)  
-C) Natural Language Processing  
-D) Discrete Event Simulation  
-
-**Correct Answer:** B) SQL
+Overall, the talk underlines the importance of **analytical thinking, problem solving, and understanding complex systems** rather than constantly chasing the newest technologies.
 
 ---
 
-## (b)
+# Questions & Answers
+
+## Open-Ended Question
+
+**Question**
+
+Cem Vardar mentions that simple solutions are often preferred over complex ones. Why does he advocate an evolutionary approach instead of designing a perfect system from scratch?
+
+**Answer**
+
+Complex systems are influenced by many interacting factors such as human behavior, operational constraints, and organizational culture. Designing a perfect system from scratch often relies on unrealistic assumptions. An evolutionary approach allows engineers to gradually improve the system while observing how each change affects performance.
+
+---
+
+## Multiple Choice Question
+
+**Question**
+
+According to Cem Vardar, which technical tool has remained a constant must-have throughout his career?
+
+A) Deep Learning Frameworks  
+B) SQL  
+C) Natural Language Processing  
+D) Discrete Event Simulation  
+
+**Correct Answer:** **B) SQL**
+
+---
+
+# (b) Data Analysis with R
+
+## Load the dataset
 
 ```{r}
-### Load the dataset and define variables
 library(dslabs)
+
 data("polls_us_election_2016")
 data <- polls_us_election_2016
+```
+
+## Define personal variables
+
+```{r}
 my_first <- "Sena"
 my_birth_year <- 2002
+
 k <- (nchar(my_first) + my_birth_year) %% 15 + 8
 k
+```
 
-### Display k rows of the original dataset
+## Display rows of the dataset
+
+```{r}
 if (k %% 2 == 0) {
   head(data, k)
 } else {
   tail(data, k)
 }
+```
 
-### Total number of NA values in the dataset
+## Count total missing values
+
+```{r}
 sum(is.na(data))
+```
 
-### Number of NA values per column (top 8)
+## Count missing values by column
+
+```{r}
 na_counts <- sort(colSums(is.na(data)), decreasing = TRUE)
 head(na_counts, 8)
+```
 
-### Create a new dataset by replacing NA values according to the specified rules
+## Replace missing values
+
+```{r}
 new_data <- data
 
 for (col in names(new_data)) {
@@ -86,17 +115,28 @@ for (col in names(new_data)) {
   }
 
 }
+```
 
-### Print outputs for the new data frame
+## Display rows of the cleaned dataset
+
+```{r}
 if (k %% 2 == 0) {
   head(new_data, k)
 } else {
   tail(new_data, k)
 }
+```
 
-### Total number of NA values remaining in the new data frame
+## Check remaining NA values
+
+```{r}
 sum(is.na(new_data))
-
-### It should return FALSE if done correctly
 anyNA(new_data)
+```
+
+---
+
+# Conclusion
+
+After replacing the missing values according to the specified rules, the dataset no longer contains any missing values. The final check using `anyNA()` confirms that the data frame is fully cleaned.
 
