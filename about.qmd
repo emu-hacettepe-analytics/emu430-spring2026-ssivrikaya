@@ -2,36 +2,41 @@
 title: "About Me"
 sidebar: false
 ---
+# About Me
+
+I am **Sena Sivrikaya**, a senior Industrial Engineering student at **Hacettepe University** in Ankara, Türkiye.
+
+My academic interests focus on **data analytics, optimization, operations research, and decision-making under uncertainty**. I am especially interested in how analytical methods can be used to understand, model, and improve complex systems.
 
 # Education
 
-- B.S., Industrial Engineering, Hacettepe University, Turkey, 2022 - ongoing  
-  GPA: 3.64 / 4.00 
+- **B.S. in Industrial Engineering**, Hacettepe University, Türkiye, 2022 - ongoing  
+  GPA: 3.64 / 4.00
 
 # Work Experience
 
 ## Employments
 
-1. Philip Morris International, Integrated Business Planning (IBP) Long-Term Intern (Part-Time), 2025 - ongoing
+1. **Philip Morris International**, Integrated Business Planning (IBP) Long-Term Intern (Part-Time), 2025 - ongoing
 
 ## Internships
 
-1. Turkish Airlines, Digitalisation & Continuous Improvement Intern, 2025  
+1. **Turkish Airlines**, Digitalisation & Continuous Improvement Intern, 2025
 
-2. Jotform, Data Analyst Intern, 2024  
+2. **Jotform**, Data Analyst Intern, 2024
 
-3. TotalEnergies, Supply & Trade Intern, 2024  
+3. **TotalEnergies**, Supply & Trade Intern, 2024
 
 # Projects
 
-1. **mpci: Python Package for Multivariate Process Capability Indices**  
-   Co-author and lead developer of an open-source Python library implementing multivariate process capability indices.
+1.  **mpci: Python Package for Multivariate Process Capability Indices**\
+    Co-author and lead developer of an open-source Python library implementing multivariate process capability indices.
 
-2. **AI-Powered Personalized Leadership Development System (ROKETSAN)**  
-   Developed a stochastic and optimization-based system combining Structural Equation Modeling and Markov Chains to recommend personalized training programs.
+2.  **AI-Powered Personalized Leadership Development System (ROKETSAN)**\
+    Developed a stochastic and optimization-based system combining Structural Equation Modeling and Markov Chains to recommend personalized training programs.
 
-3. **Space Logistics Optimization for Lunar-to-GEO Refueling**  
-   Developed an optimization-based decision support model for satellite refueling logistics using Constraint Programming.
+3.  **Space Logistics Optimization for Lunar-to-GEO Refueling**\
+    Developed an optimization-based decision support model for satellite refueling logistics using Constraint Programming.
 
 # Competencies
 

@@ -1,12 +1,16 @@
 ---
-title: "Our Course Project"
-sidebar: false 
+title: "Projects"
+sidebar: false
 ---
 
-I'm honored to be a member of the \[group name\] project team.
+# Projects
 
-Below, you'll find a brief summary of our project. To access a detailed project description, please go to [https://\[your-project-url\]](#0){.uri}.
+Below are some of the projects and areas I am currently interested in.
 
-**Summary**
+## mpci: Python Package for Multivariate Process Capability Indices
 
-\[provide a biref summary of your project\]
+This project focuses on developing an open-source Python package for computing Multivariate Process Capability Indices. The goal is to provide a modular and reliable implementation for researchers and practitioners working on multivariate quality control problems.
+
+## AI-Powered Personalized Leadership Development System
+
+This senior design project investigates how analytics, stochastic modeling, and optimization can be combined to support personalized leadership development through data-driven recommendations.
