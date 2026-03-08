@@ -1,6 +1,26 @@
 ---
-title: "My Blog"
-sidebar: false 
+title: "My Posts"
+sidebar: false
 ---
 
-This page is under construction.
+# My Posts
+
+This page is where I share short notes on **life, learning, and well-being**.
+
+Alongside my coursework and projects, I also enjoy writing about experiences and ideas that shape how I study, work, and live.
+
+## Topics I Want to Share
+
+### Travel Notes
+Short reflections from countries, cities, and places I visit.
+
+### Well-Being
+Thoughts on balance, motivation, healthy routines, and student life.
+
+### Healthy Snack Ideas
+Simple and practical snack ideas that are easy to prepare and fit a busy schedule.
+
+## Coming Soon
+
+I plan to share posts in these areas over time.
+

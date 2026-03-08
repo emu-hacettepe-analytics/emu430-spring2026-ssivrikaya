@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Sena Sivrikaya's Analytics Lab"
+
   navbar:
     search: true
     background: white
@@ -13,6 +14,8 @@ website:
         href: index.qmd
       - text: About Me
         href: about.qmd
+      - text: My Posts
+        href: posts.qmd
       - text: Projects
         href: project.qmd
       - text: "EMU430 Coursework"
@@ -31,7 +34,7 @@ website:
         href: https://www.linkedin.com/in/sena-sivrikaya/
 
   sidebar:
-    - title: "Assignments"
+    - title: "My Assignments"
       style: "docked"
       search: true
       contents:

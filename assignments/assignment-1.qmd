@@ -43,7 +43,7 @@ D) Discrete Event Simulation
 ## (b)
 
 ```{r}
-# Load the dataset and define variables
+### Load the dataset and define variables
 library(dslabs)
 data("polls_us_election_2016")
 data <- polls_us_election_2016
@@ -52,21 +52,21 @@ my_birth_year <- 2002
 k <- (nchar(my_first) + my_birth_year) %% 15 + 8
 k
 
-# Display k rows of the original dataset
+### Display k rows of the original dataset
 if (k %% 2 == 0) {
   head(data, k)
 } else {
   tail(data, k)
 }
 
-# Total number of NA values in the dataset
+### Total number of NA values in the dataset
 sum(is.na(data))
 
-# Number of NA values per column (top 8)
+### Number of NA values per column (top 8)
 na_counts <- sort(colSums(is.na(data)), decreasing = TRUE)
 head(na_counts, 8)
 
-# Create a new dataset by replacing NA values according to the specified rules
+### Create a new dataset by replacing NA values according to the specified rules
 new_data <- data
 
 for (col in names(new_data)) {
@@ -87,16 +87,16 @@ for (col in names(new_data)) {
 
 }
 
-# Print outputs for the new data frame
+### Print outputs for the new data frame
 if (k %% 2 == 0) {
   head(new_data, k)
 } else {
   tail(new_data, k)
 }
 
-# Total number of NA values remaining in the new data frame
+### Total number of NA values remaining in the new data frame
 sum(is.na(new_data))
 
-# It should return FALSE if done correctly
+### It should return FALSE if done correctly
 anyNA(new_data)
 
