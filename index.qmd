@@ -2,6 +2,7 @@
 title: "Welcome to My Analytics Lab"
 sidebar: false
 ---
+![](/Users/senasivrikaya/Downloads/emu430/emu430-spring2026-ssivrikaya/profile.jpg){width=30% fig-align="center"}
 
 # Welcome
 
@@ -25,7 +26,7 @@ I am currently interested in applying analytics and optimization approaches to r
 
 ## Connect With Me
 
-- [LinkedIn](https://www.linkedin.com/in/sena-sivrikaya/)
+- [LinkedIn](https://www.linkedin.com/in/sena-sivrikaya-289a41203/)
 - [GitHub](https://github.com/ssivrikaya)
 
 ## A Short Note

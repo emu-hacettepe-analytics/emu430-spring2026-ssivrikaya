@@ -211,39 +211,32 @@
     "text": "Neither one is universally better. The best option depends on your goals.\n\nIf you want guided resistance and equipment-based exercises, reformer pilates may be more suitable.\nIf you want a simpler and more accessible routine, mat pilates can be a great choice.\n\nBoth forms can improve posture, flexibility, balance, and core strength."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to My Analytics Lab",
-    "section": "",
-    "text": "Hello! My name is Sena Sivrikaya.\nI am a senior Industrial Engineering student at Hacettepe University in Ankara, Türkiye. My academic interests include data analytics, operations research, optimization, stochastic modeling, and decision support systems.\nThis website is my personal course page for EMU430 Data Analytics, where I share my coursework, assignments, and projects related to data analytics and industrial engineering.\n\n\n\nData Analytics\nOperations Research\nOptimization\nDecision Support Systems\nSupply Chain Systems\n\n\n\n\nI am currently interested in applying analytics and optimization approaches to real-world industrial systems and decision problems.\n\n\n\n\nLinkedIn\nGitHub\n\n\n\n\nI enjoy combining engineering thinking with data-driven approaches to better understand and improve complex systems. I am excited to share my learning journey in data analytics through this website and look forward to connecting with others in the field!"
-  },
-  {
     "objectID": "index.html#areas-of-interest",
     "href": "index.html#areas-of-interest",
     "title": "Welcome to My Analytics Lab",
-    "section": "",
-    "text": "Data Analytics\nOperations Research\nOptimization\nDecision Support Systems\nSupply Chain Systems"
+    "section": "Areas of Interest",
+    "text": "Areas of Interest\n\nData Analytics\nOperations Research\nOptimization\nDecision Support Systems\nSupply Chain Systems"
   },
   {
     "objectID": "index.html#current-focus",
     "href": "index.html#current-focus",
     "title": "Welcome to My Analytics Lab",
-    "section": "",
-    "text": "I am currently interested in applying analytics and optimization approaches to real-world industrial systems and decision problems."
+    "section": "Current Focus",
+    "text": "Current Focus\nI am currently interested in applying analytics and optimization approaches to real-world industrial systems and decision problems."
   },
   {
     "objectID": "index.html#connect-with-me",
     "href": "index.html#connect-with-me",
     "title": "Welcome to My Analytics Lab",
-    "section": "",
-    "text": "LinkedIn\nGitHub"
+    "section": "Connect With Me",
+    "text": "Connect With Me\n\nLinkedIn\nGitHub"
   },
   {
     "objectID": "index.html#a-short-note",
     "href": "index.html#a-short-note",
     "title": "Welcome to My Analytics Lab",
-    "section": "",
-    "text": "I enjoy combining engineering thinking with data-driven approaches to better understand and improve complex systems. I am excited to share my learning journey in data analytics through this website and look forward to connecting with others in the field!"
+    "section": "A Short Note",
+    "text": "A Short Note\nI enjoy combining engineering thinking with data-driven approaches to better understand and improve complex systems. I am excited to share my learning journey in data analytics through this website and look forward to connecting with others in the field!"
   },
   {
     "objectID": "posts.html",
